@@ -79,31 +79,19 @@ p {
 
 body > footer,
 section {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 	min-width: 1240px;
 }
 
 .wrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
 	width: 1080px;
 	padding: 50px 0;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: stretch;
-	    -ms-flex-align: stretch;
-	        align-items: stretch;
-	-ms-flex-line-pack: start;
-	    align-content: flex-start;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;	
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: flex-start;
+	flex-wrap: wrap;	
 }
 
 .btn-box {
@@ -123,9 +111,7 @@ section {
 	color: #000000;
 	border: 1px solid #000000;
 	border-radius: 10px;
-	-webkit-transition-duration: 0.2s;
-	     -o-transition-duration: 0.2s;
-	        transition-duration: 0.2s;
+	transition-duration: 0.2s;
 }
 
 .btn:hover {
@@ -160,15 +146,9 @@ section {
 /*--------------- HEADER ---------------*/
 
 .header-nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: space-between;
+	align-items: center;
 	width: 1240px;
 	margin: 0 auto;
 	min-height: 80px;
@@ -190,9 +170,7 @@ section {
 	width: 26px;
 	height: 2px;
 	background-color: #000000;
-	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
-	        transition-duration: 0.3s;
+	transition-duration: 0.3s;
 }
 
 .main_menu span {
@@ -213,27 +191,17 @@ section {
 }
 
 .main_menu:hover  span{
-	-webkit-transform: rotate(90deg) scale(0.8, 1) translateX(-2px);
-	    -ms-transform: rotate(90deg) scale(0.8, 1) translateX(-2px);
-	        transform: rotate(90deg) scale(0.8, 1) translateX(-2px);
+	transform: rotate(90deg) scale(0.8, 1) translateX(-2px);
 }
 
 .main_menu:hover span::before {
-	-webkit-transform-origin: top right;
-	    -ms-transform-origin: top right;
-	        transform-origin: top right;
-	-webkit-transform:  rotate(45deg) scale(0.5, 1) translate(15px, 5px);
-	    -ms-transform:  rotate(45deg) scale(0.5, 1) translate(15px, 5px);
-	        transform:  rotate(45deg) scale(0.5, 1) translate(15px, 5px);
+	transform-origin: top right;
+	transform:  rotate(45deg) scale(0.5, 1) translate(15px, 5px);
 }
 
 .main_menu:hover span::after {
-	-webkit-transform-origin: bottom right;
-	    -ms-transform-origin: bottom right;
-	        transform-origin: bottom right;
-	-webkit-transform:  rotate(-45deg) scale(0.5, 1)  translate(15px, -5px);
-	    -ms-transform:  rotate(-45deg) scale(0.5, 1)  translate(15px, -5px);
-	        transform:  rotate(-45deg) scale(0.5, 1)  translate(15px, -5px);
+	transform-origin: bottom right;
+	transform:  rotate(-45deg) scale(0.5, 1)  translate(15px, -5px);
 }
 
 .main_menu ul {
@@ -241,16 +209,10 @@ section {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	-webkit-transform-origin: top left;
-	    -ms-transform-origin: top left;
-	        transform-origin: top left;
-	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
-	        transition-duration: 0.3s;
+	transform-origin: top left;
+	transition-duration: 0.3s;
 	opacity: 0;
-	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
+	transform: scale(0);
 }
 
 .main_menu li {
@@ -265,9 +227,7 @@ section {
 
 .main_menu:hover > ul {
 	opacity: 1;
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 
 .main_menu li > ul {
@@ -277,9 +237,7 @@ section {
 
 .main_menu li:hover > ul {
 	opacity: 1;
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 
 .main_menu li > ul li {
@@ -299,24 +257,14 @@ section {
 	border: 19px solid transparent;
 	border-right: none;
 	border-left: 10px solid #ffd200;
-	-webkit-transform-origin: center left;
-	    -ms-transform-origin: center left;
-	        transform-origin: center left;
-	-webkit-transform: translateX(-19px) scale(0);
-	    -ms-transform: translateX(-19px) scale(0);
-	        transform: translateX(-19px) scale(0);	
+	transform-origin: center left;
+	transform: translateX(-19px) scale(0);	
 }
 
 .main_menu li:hover > ul li:first-child::after {
-	-webkit-transform: translateX(0px) scale(1);
-	    -ms-transform: translateX(0px) scale(1);
-	        transform: translateX(0px) scale(1);
-	-webkit-transition-duration: 0.2s;
-	     -o-transition-duration: 0.2s;
-	        transition-duration: 0.2s;
-	-webkit-transition-delay: 0.1s;
-	     -o-transition-delay: 0.1s;
-	        transition-delay: 0.1s;
+	transform: translateX(0px) scale(1);
+	transition-duration: 0.2s;
+	transition-delay: 0.1s;
 }
 
 .main_menu a {
@@ -324,8 +272,7 @@ section {
 	position: relative;
 	min-width: 150px;
 	padding: 10px 20px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	background: #ffffff;
 	color: #000000;
 	text-decoration: none;
@@ -368,9 +315,7 @@ section {
 	letter-spacing: 0.06em;
 	color: #000000;
 	text-decoration: none;
-	-webkit-transition-duration: 0.2s;
-	     -o-transition-duration: 0.2s;
-	        transition-duration: 0.2s;
+	transition-duration: 0.2s;
 }
 
 .phone_number:hover {
@@ -407,21 +352,13 @@ section {
 	width: 18px;
 	height: 29px;
 	background: #000000;
-	-webkit-transform-origin: center right;
-	    -ms-transform-origin: center right;
-	        transform-origin: center right;
-	-webkit-transform: scale(0, 1);
-	    -ms-transform: scale(0, 1);
-	        transform: scale(0, 1);
-	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
-	        transition-duration: 0.3s;
+	transform-origin: center right;
+	transform: scale(0, 1);
+	transition-duration: 0.3s;
 }
 
 .sign_in:hover::before {
-	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 
 .sign_in a {
@@ -443,12 +380,8 @@ section {
 	width: 19px;
 	height: 2px;
 	background-color: #000000;
-	-webkit-transform: translateX(0px);
-	    -ms-transform: translateX(0px);
-	        transform: translateX(0px);
-	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
-	        transition-duration: 0.3s;
+	transform: translateX(0px);
+	transition-duration: 0.3s;
 }
 
 .sign_in a::after {
@@ -462,28 +395,20 @@ section {
 	border: 2px solid #000000;
 	border-left: none;
 	border-bottom: none;
-	-webkit-transform: translateX(0px) rotate(45deg);
-	    -ms-transform: translateX(0px) rotate(45deg);
-	        transform: translateX(0px) rotate(45deg);
-	-webkit-transition-duration: 0.3s;
-	     -o-transition-duration: 0.3s;
-	        transition-duration: 0.3s;
+	transform: translateX(0px) rotate(45deg);
+	transition-duration: 0.3s;
 }
 
 .sign_in:hover a::before {
 	background-color: #ffffff;
-	-webkit-transform: translateX(7px);
-	    -ms-transform: translateX(7px);
-	        transform: translateX(7px);
+	transform: translateX(7px);
 }
 
 .sign_in:hover a::after {
 	border: 2px solid #ffffff;
 	border-left: none;
 	border-bottom: none;
-	-webkit-transform: translateX(7px) rotate(45deg);
-	    -ms-transform: translateX(7px) rotate(45deg);
-	        transform: translateX(7px) rotate(45deg);
+	transform: translateX(7px) rotate(45deg);
 }
 
 body > header .wrapper {
@@ -516,11 +441,8 @@ body > header .wrapper {
 
 .steps .wrapper {
 	position: relative;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .steps .wrapper::before {
@@ -532,8 +454,6 @@ body > header .wrapper {
 	height: 5px;
 	max-width: 800px;
 	margin: 0 auto;
-	background-image: -webkit-linear-gradient(left, #ffd200 12px, #ffffff 12px);
-	background-image: -o-linear-gradient(left, #ffd200 12px, #ffffff 12px);
 	background-image: linear-gradient(to right, #ffd200 12px, #ffffff 12px);
 	background-repeat: repeat-x;
 	background-size: 24px 5px;
@@ -630,20 +550,12 @@ body > header .wrapper {
 }
 
 .products-item {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
 	min-width: 313px;
 	min-height: 367px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	border: 5px solid #ffd200;
 	border-radius: 10px;
 	margin-top: 22px;
@@ -683,9 +595,7 @@ body > header .wrapper {
 	border: 2px solid #ffd200;
 	border-top-color: transparent;
 	border-radius: 50%;
-	-webkit-transform: rotate(45deg);
-	    -ms-transform: rotate(45deg);
-	        transform: rotate(45deg);
+	transform: rotate(45deg);
 }
 
 .products-item li:after {
@@ -698,9 +608,7 @@ body > header .wrapper {
 	border: 2px solid #000000;
 	border-top: none;
 	border-right: 0;
-	-webkit-transform: rotate(-45deg);
-	    -ms-transform: rotate(-45deg);
-	        transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .products-item .price {
@@ -774,16 +682,9 @@ body > header .wrapper {
 }
 
 .reviews .wrapper-left {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .reviews h2 {
@@ -795,16 +696,9 @@ body > header .wrapper {
 }
 
 .reviews-item header {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	position: relative;
 	padding-left: 190px;
 	min-height: 158px;
@@ -888,8 +782,7 @@ body > header .wrapper {
 .helpful_info-box {
 	width: 313px;
 	min-height: 306px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	margin: 42px 0;
 	padding: 0 0 36px;
 	background: #f7f0e6;
@@ -900,8 +793,7 @@ body > header .wrapper {
 .helpful_info-box h3 {
 	display: block;
 	width: 100%;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	margin-bottom: 28px;
 	padding: 12px;
 	background: #ffd200;
@@ -911,7 +803,7 @@ body > header .wrapper {
 	border-top-right-radius: 10px;
 }
 
-.helpful_info-box div {
+.helpful_info-box-content {
 	padding: 0 36px;
 	line-height: 1.25em;
 }
@@ -945,8 +837,7 @@ body > footer {
 }
 
 body > footer .wrapper {
-	-ms-flex-line-pack: stretch;
-	    align-content: stretch;
+	align-content: stretch;
 	padding: 50px 0;
 }
 
@@ -1002,11 +893,8 @@ body > footer aside .social a {
 	border-radius: 3px;
 	font-size: 0;
 	background: url("../img/social_btn.png") no-repeat;
-	-webkit-filter: brightness(0);
-	        filter: brightness(0);
-	-webkit-transition-duration: 0.2s;
-	     -o-transition-duration: 0.2s;
-	        transition-duration: 0.2s;
+	filter: brightness(0);
+	transition-duration: 0.2s;
 }
 
 body > footer aside .social .fs {
@@ -1022,22 +910,19 @@ body > footer aside .social .in {
 }
 
 body > footer aside .social a:hover {
-	-webkit-filter: brightness(1);
-	        filter: brightness(1);
+	filter: brightness(1);
 	background-color: #ffffff;
 }
 
 body > footer aside .social a:active {
-	-webkit-filter: grayscale(1);
-	        filter: grayscale(1);
+	filter: grayscale(1);
 	background-color: #ffffff;
 }
 
 body > footer aside .design-copy {
 	width: 85px;
 	height: 110px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 14px 0;
 	text-align: center;
 	border: 1px solid #000000;
@@ -1050,8 +935,7 @@ body > footer .design-copy img {
 }
 
 body > footer .copyright {
-	-ms-flex-item-align: end;
-	    align-self: flex-end;
+	align-self: flex-end;
 	width: 100%;
 	text-align: center;
 	font-size: 0.7777em;
