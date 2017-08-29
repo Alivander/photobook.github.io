@@ -1024,11 +1024,13 @@ body > footer aside .social .in {
 body > footer aside .social a:hover {
 	-webkit-filter: brightness(1);
 	        filter: brightness(1);
+	background-color: #ffffff;
 }
 
 body > footer aside .social a:active {
 	-webkit-filter: grayscale(1);
 	        filter: grayscale(1);
+	background-color: #ffffff;
 }
 
 body > footer aside .design-copy {
