@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Photobook - The project was created for self-education</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -34,12 +35,8 @@
 					<li><a href="#">Shipping</a></li>
 				</ul>
 			</div>
-			<div class="logo">
-				<a href="#"><img src="img/logo.png" alt="PHOTOBOOK"></a>
-			</div>
-			<div class="phone_number">
-				<span>+11 235 813 2134</span>
-			</div>
+			<a href="#" class="logo"><img src="img/logo.png" alt="PHOTOBOOK"></a>
+			<a href="tel:+11-235-813-2134" class="phone_number">+11 235 813 2134</a>
 			<div class="sign_in">
 				<a href="#">Sign in</a>
 			</div>
@@ -69,35 +66,35 @@
 		<section class="advantage">
 			<div class="wrapper">
 				<h2>Advantage</h2>
-				<figure>
+				<figure class="advantage-item">
 					<img src="img/social.png" alt="Social networks">
 					<figcaption>
 						<h3>Import photos<br>from your social networks</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt modi tempora</p>
 					</figcaption>
 				</figure>
-				<figure>
+				<figure class="advantage-item">
 					<img src="img/editing.jpg" alt="Photo editing">
 					<figcaption>
 						<h3>Photo editing</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ora incidunt ut labore.</p>
 					</figcaption>
 				</figure>
-				<figure>
+				<figure class="advantage-item">
 					<img src="img/templates.jpg" alt="Templates">
 					<figcaption>
 						<h3>Templates</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing. Ut enim ad minim, nostrud exercitation ullamco laboris nisi ut aliquip ex commodo.</p>
 					</figcaption>
 				</figure>
-				<span><a href="#" class="btn btn-red">Make your photobook</a></span>
+				<div class="btn-box"><a href="#" class="btn btn-red">Make your photobook</a></div>
 			</div>
 		</section>
 
 		<section class="products">
 			<div class="wrapper">
 				<h2>Ready solutions</h2>
-				<article data-title="LightBook">
+				<article class="products-item">
 					<h3>LightBook</h3>
 					<ul>
 						<li>15x10 cm</li>
@@ -105,8 +102,9 @@
 						<li>binding on the clip</li>
 					</ul>
 					<span class="price">$129</span>
+					<a href="#" class="make">Make your <span>LightBook</span></a>
 				</article>
-				<article data-title="ClassicBook" class="best">
+				<article class="products-item best">
 					<h3>ClassicBook</h3>
 					<ul>
 						<li>30x21 cm</li>
@@ -115,8 +113,9 @@
 						<li>fabric cover</li>
 					</ul>
 					<span class="price">$239</span>
+					<a href="#" class="make">Make your <span>ClassicBook</span></a>
 				</article>
-				<article data-title="PremiumBook">
+				<article class="products-item">
 					<h3>PremiumBook</h3>
 					<ul>
 						<li>45x50 cm</li>
@@ -126,6 +125,7 @@
 						<li>free shipping</li>
 					</ul>
 					<span class="price">$759</span>
+					<a href="#" class="make">Make your <span>PremiumBook</span></a>
 				</article>
 			</div>
 		</section>
@@ -134,10 +134,10 @@
 			<div class="wrapper">
 				<div class="wrapper-left">
 					<h2>Testimonials</h2>
-					<article class="review">
+					<article class="reviews-item">
 						<header>
 							<h3>John Doe</h3>
-							<span>Wedding photographer</span>
+							<p>Wedding photographer</p>
 						</header>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
@@ -151,14 +151,14 @@
 
 		<section class="helpful_info">
 			<div class="wrapper">
-				<article>
+				<div class="helpful_info-box">
 					<h3>Terms</h3>
 					<div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
 						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
 					</div>
-				</article>
-				<article>
+				</div>
+				<div class="helpful_info-box">
 					<h3>Payment</h3>
 					<div>
 					<p>Payment methods:</p>
@@ -169,15 +169,15 @@
 							<li>American Express</li>
 						</ul>
 					</div>
-				</article>
-				<article>
+				</div>
+				<div class="helpful_info-box">
 					<h3>Shipping</h3>
 					<div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-						<p class="bonus">Free shipping for PremiumBook</p>
+						<p class="bonus">Free shipping for <span>PremiumBook</span></p>
 					</div>
-				</article>
-				<span><a href="#" class="btn btn-red">Make your photobook</a></span>
+				</div>
+				<div class="btn-box"><a href="#" class="btn btn-red">Make your photobook</a></div>
 			</div>
 		</section>
 
@@ -198,7 +198,7 @@
 					<li><a href="#">Shipping</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
-				<ul class="product">
+				<ul class="books">
 					<li><a href="#">LightBook</a></li>
 					<li><a href="#">ClassicBook</a></li>
 					<li><a href="#">PremiumBook</a></li>
@@ -206,7 +206,7 @@
 
 			<aside>
 				<div class="social">
-					<a href="#" class="fs">Fasebook</a><a href="#" class="vk">Вконтакте</a><a href="#" class="in">Instagram</a>
+					<a href="#" class="fs">Fasebook</a><a href="#" class="vk">ВКонтакте</a><a href="#" class="in">Instagram</a>
 				</div>
 				<div class="design-copy">
 					<span>Designed by</span>
@@ -215,7 +215,8 @@
 			</aside>
 			
 			<div class="copyright">
-				&copy; 2017 Photobook. All rights reserved.
+				&copy; 2017 Alivander. The project was created for self-education.<br>
+				<a href="mailto:a.v.2212@mail.ru" target="_blank">Contact with me - a.v.2212@mail.ru</a>
 			</div>
 		</div>
 
